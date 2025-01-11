@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "@/app/[locale]/_components/link";
-import {usePathname} from "next-intl/client";
+import {usePathname} from "next-intl/navigation";
 import {localeConfig} from "@/i18n";
 import {Fragment} from "react";
 
