@@ -13,7 +13,6 @@ module.exports = withBundleAnalyzer(withNextIntl({
         });
 
         if (!dev && !isServer) {
-            // 生产环境优化
             config.plugins.push(
                 new CompressionPlugin({
                     algorithm: 'gzip',
@@ -36,7 +35,6 @@ module.exports = withBundleAnalyzer(withNextIntl({
         ],
         dangerouslyAllowSVG: true
     },
-    // 添加性能优化配置
     swcMinify: true,
     reactStrictMode: true,
     poweredByHeader: false,
